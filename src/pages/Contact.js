@@ -44,10 +44,7 @@ export const Contact = () => {
                         Address
                       </h2>
                       <h2 className="text-gray-800 text-base md:text-lg leading-8 tracking-wider mt-2">
-                        B104, 1st Floor, Gulmohar Apartment <br />
-                        Above SBI Bank East Street Camp,
-                        <br />
-                        Pune - 411 001
+                        Office #13, NSTP, NUST University H-12 Sector, Islamabad
                       </h2>
                     </div>
                     <div className="mt-4 md:mt-8">
@@ -55,13 +52,10 @@ export const Contact = () => {
                         Contact
                       </h2>
                       <h2 className="text-gray-800 text-base md:text-lg leading-8 tracking-wider mt-2">
-                        +91 9822014861
+                        +92 051 4567890 (Phone)
                       </h2>
                       <h2 className="text-gray-800 text-base md:text-lg leading-8 tracking-wider mt-2">
-                        +91 9822347333
-                      </h2>
-                      <h2 className="text-gray-800 text-base md:text-lg leading-8 tracking-wider mt-2">
-                        +91 9822595591
+                        +92 123 4567890 (Cell)
                       </h2>
                     </div>
                     <div className="mt-4 md:mt-8">
@@ -69,13 +63,7 @@ export const Contact = () => {
                         Email
                       </h2>
                       <h2 className="text-gray-800 text-base md:text-lg leading-8 tracking-wider mt-2">
-                        ncp772@gmail.com
-                      </h2>
-                      <h2 className="text-gray-800 text-base md:text-lg leading-8 tracking-wider mt-2">
-                        Parmargr65@gmail.com
-                      </h2>{" "}
-                      <h2 className="text-gray-800 text-base md:text-lg leading-8 tracking-wider mt-2">
-                        ncp776@gmail.com
+                        alphasquad@example.com
                       </h2>
                     </div>
                   </div>
@@ -131,20 +119,20 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-      <div>
-        {/* className="relative overflow-hidden pb-9/16 h-0" */}
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d945.846093893879!2d73.88004354250525!3d18.51152448359706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c04856946cc1%3A0xad312915c4fdfc94!2sState%20Bank%20of%20India!5e0!3m2!1sen!2sin!4v1722502096929!5m2!1sen!2sin"
-          width="600"
-          height="450"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          className=" w-full  border-red-600"
-          title="Google Maps"
-        ></iframe>
-      </div>
+      <div >
+      {/* className="relative overflow-hidden pb-9/16 h-0" */}
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d945.846093893879!2d73.88004354250525!3d18.51152448359706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c04856946cc1%3A0xad312915c4fdfc94!2sState%20Bank%20of%20India!5e0!3m2!1sen!2sin!4v1722502096929!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        className=" w-full  border-red-600"
+        title="Google Maps"
+      ></iframe>
+    </div>
     </div>
   );
 };
