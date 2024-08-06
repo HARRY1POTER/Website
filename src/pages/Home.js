@@ -76,7 +76,7 @@ export const Home = () => {
 
           <section className="text-center">
             <h2 className="text-5xl font-bold mb-4">
-              Let's Build Your <span className="text-teal-900">Dream Home</span>{" "}
+              Let's Build Your <span className="text-[#bd9e81]">Dream Home</span>{" "}
               Together
             </h2>
             <p className="max-w-3xl mx-auto mb-8 text-xl">
@@ -108,7 +108,7 @@ export const Home = () => {
           <div className="w-full lg:w-6/12 flex flex-col justify-center">
             <h2 className="w-full  lg:text-5xl text-4xl lg:leading-10 leading-9">
               Let’s Build Your New
-              <br /> <span className="font-bold text-cyan-400">
+              <br /> <span className="font-bold text-[#bd9e81]">
                 Dream Home
               </span>{" "}
               Together

@@ -7,6 +7,7 @@ import { GoProjectRoadmap } from "react-icons/go";
 import { IoMdContact } from "react-icons/io";
 import { AiFillProject } from "react-icons/ai";
 import { GrResources } from "react-icons/gr";
+import logo from "../assets/image/IMG-20240805-WA0010.jpg"
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,7 +32,8 @@ export const Navbar = () => {
     
       <nav className={` z-50 ${scrolled ? 'scrolled' : ''}`}>
         <Link to="/" className="title text-lg font-bold">
-          Website
+        <img src={logo} alt="logo" className="h-[29px]  "/>
+
         </Link>
         <div
           className="menu text-black "
@@ -58,7 +60,7 @@ export const Navbar = () => {
           </li>
           <li>
             <NavLink to="/portfolio" onClick={() => setMenuOpen(!menuOpen)}>
-              <span className="flex gap-2">
+              <span className="flex gap-2 ">
                 <AiFillProject className="mt-1" />
                 <span> Portfolio</span>
               </span>

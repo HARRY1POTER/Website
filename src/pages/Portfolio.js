@@ -1,7 +1,7 @@
 import React from "react";
 import image from "../assets/image/future.jpg";
 import { Images } from "../components/Images";
-
+import Marquee from "react-fast-marquee";
 
 const Data = [
   {
@@ -46,17 +46,17 @@ export const Portfolio = () => {
           className="w-full h-[30rem] sm:h-[40rem] lg:h-[50rem] object-cover object-center"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white font-bold p-4">
-          <p className="text-2xl text-orange-400 sm:text-3xl md:text-5xl lg:text-7xl">
+          <p className="gradient-text text-2xl text-white sm:text-3xl md:text-5xl lg:text-7xl">
             CONSTRUCT YOUR FUTURE
           </p>
-          <span className="text-sm text-black sm:text-lg md:text-xl lg:text-2xl mt-3 md:mt-5 max-w-2xl">
+          <span className="text-sm text-black sm:text-lg md:text-xl lg:text-3xl mt-3 md:mt-5 max-w-2xl">
             As the general construction, we first create the highest level of
             trust and integrity with our clients. We value our role in the
             success of your project.
           </span>
           <span className="mt-5">
             <a href="/contact">
-              <button className="text-base lg:text-lg bg-orange-400 p-3  rounded-full mt-3 md:mt-5">
+              <button className="text-base lg:text-lg bg-[#bd9e81] p-3  rounded-full mt-3 md:mt-5 transition-all duration-300 ease-in-out hover:scale-110">
                 Connect With Us
               </button>
             </a>
@@ -81,7 +81,7 @@ export const Portfolio = () => {
                   alt="Card"
                   className="w-full h-[30rem] object-cover"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 bg-black bg-opacity-50 flex text-center items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white text-xl font-bold">{d.text}</p>
                 </div>
               </div>
@@ -90,20 +90,50 @@ export const Portfolio = () => {
         </div>
       </div>
 
-
-
-      <div className="flex justify-center items-center p-4 mb-20">
-  <div className="container px-4">
-      <div className="text-center p-5 mb-10">
+      <div className="flex justify-center  items-center p-4 mb-20">
+        <div className="container px-4">
+          <div className="text-center p-5 mb-10">
             <hr className="my-4 border-gray-700 border-2" />
-            <h1 className="text-4xl lg:text-6xl font-bold">Our Client's Reviews</h1>
+            <h1 className="text-4xl lg:text-6xl font-bold">
+              Our Client's Reviews
+            </h1>
             <hr className="my-4 border-gray-700 border-2" />
           </div>
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-4 justify-items-center">
+          {/* <Marquee>
+            <div className="flex  gap-10">
+              {Data?.map((d, index1) => (
+                <div
+                  key={index1}
+                  className="w-full max-w-[30rem] p-6 bg-gray-200 border hover:border-black border-gray-400 rounded-lg hover:bg-gray-100 hover:shadow-black hover:shadow-2xl cursor-pointer transition-all duration-300 ease-in-out hover:scale-95"
+                  role="article"
+                  aria-labelledby={`title-${index1}`}
+                  aria-describedby={`content-${index1}`}
+                >
+                  <h5
+                    id={`title-${index1}`}
+                    className="mb-2 text-lg sm:text-xl md:text-2xl font-bold tracking-tight text-gray-900"
+                  >
+                    {d.title}
+                  </h5>
+                  <p
+                    id={`content-${index1}`}
+                    className="font-normal text-sm sm:text-base md:text-lg text-gray-700"
+                  >
+                    {d.content}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </Marquee> */}
+       <div style={{ 
+  WebkitMaskImage: 'linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent)' 
+}}>
+  <Marquee className=" ">
+    <div className="flex gap-10 ">
       {Data?.map((d, index1) => (
         <div
           key={index1}
-          className="w-full max-w-[30rem] p-6 bg-gray-200 border hover:border-black border-gray-400 rounded-lg  hover:bg-gray-100 hover:shadow-black shadow-2xl  cursor-pointer transition-all duration-300 ease-in-out hover:scale-95"
+          className="w-full max-w-[30rem] p-6 bg-gray-200 border hover:border-black border-gray-400 rounded-lg hover:bg-gray-100 hover:shadow-black hover:shadow-2xl cursor-pointer transition-all duration-300 ease-in-out hover:scale-95"
           role="article"
           aria-labelledby={`title-${index1}`}
           aria-describedby={`content-${index1}`}
@@ -122,21 +152,13 @@ export const Portfolio = () => {
           </p>
         </div>
       ))}
+      <div />
     </div>
-  </div>
+  </Marquee>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
+        </div>
+      </div>
     </>
   );
 };

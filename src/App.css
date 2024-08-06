@@ -57,3 +57,24 @@ footer {
 }
  */
  
+ @keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #00f2fe, #4facfe, #0033cc, #00f2fe);
+  background-size: 400% 400%; /* Larger size for smoother animation */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientAnimation 6s ease infinite;
+}
+

@@ -8,8 +8,10 @@ import slider4 from "../assets/image/machine/img.jfif";
 import slider3 from "../assets/image/machine/Types-of-Concrete-Pump.jpg";
 import slider2 from "../assets/image/machine/Tower-Cranes.jpg";
 import slider6 from "../assets/image/WhatsApp Image 2024-07-29 at 7.58.11 PM.jpeg";
+// import slider7 from "../assets/image/IMG-20240805-WA0011.jpg";
 
-const images = [slider1, slider2, slider3, slider4, slider5, slider6];
+
+const images = [slider1, slider2, slider3, slider4, slider5, slider6, ];
 
 export const Capabilities = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
